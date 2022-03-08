@@ -1,0 +1,133 @@
+/**
+* @name LilyZeeko
+* @author Zeeko#0010
+* @description A theme based on Nyria#3863
+* @version 1.0
+* @donate to Nyria if you liked the theme https://ko-fi.com/nyria
+*/
+@import url("https://nyri4.github.io/LilyPichu/main.css");
+
+:root {
+
+/* --- User variables --- */
+
+/* Jumping GIF */
+--jumping-gif: url('https://media.giphy.com/media/xgC0dqgNE2b7KvH0W0/giphy.gif');
+
+/* Background (if you want an image replace it by : */
+
+--background-tertiary-alt: url("https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_0.jpg");
+
+
+/* Border-radius for the whole theme */
+--border-radius: 8px;
+
+}
+
+.theme-dark {
+
+    /* Text */
+    --text-normal: #ffffff;
+    --header-primary: #ffffff;
+    --interactive-normal: #ffffff;
+    --channels-default: #ffffff;
+
+    --text-muted: #ffffff;
+    --interactive-muted: #afaeae;
+
+    --header-secondary: #dddddd;
+    --interactive-hover: #bbcde5;
+    --interactive-active: #bbcde5;
+
+    /* Background color */
+    --background-primary: rgba(44, 47, 51, 0.7);
+    --background-secondary: #333333;
+    --background-secondary-alt: #444444;
+    --background-tertiary: rgb(26, 27, 29);
+    --background-floating: rgb(44, 47, 51);
+    --background-accent: #639FAB;
+    --channeltextarea-background: var(--background-secondary);
+    --background-modifier-hover: rgb(26, 27, 29);
+    --background-modifier-active: rgb(26, 27, 29);
+    --background-modifier-selected: rgb(26, 27, 29);
+    --toast-background: rgb(26, 27, 29) !important;
+    --toast-header: rgb(26, 27, 29) !important;
+    --toast-contents: rgb(26, 27, 29) !important;
+    --toast-border: rgb(26, 27, 29) !important;
+
+    /* Scrollbar */
+    --scrollbar-auto-thumb: var(--background-tertiary);
+    --scrollbar-auto-track: var(--background-secondary-alt);
+    --scrollbar-thin-thumb: var(--background-tertiary);
+    --scrollbar-thin-track: transparent;
+
+    /* Other */
+    --deprecated-quickswitcher-input-background: var(--background-primary);
+}
+    .colorBrand-3cPPsm { color: #c5536c;}
+    .colorDefault-CDqZdO.focused-3qFvc8, .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) { background-color: var(--background-modifier-hover) !important;}
+
+    /* Buttons */
+    .lookFilled-yCfaCM { background-color: #c5536c !important;}
+    .lookFilled-yCfaCM:active, .lookFilled-yCfaCM:hover { background-color: #b64a61 !important;}
+    .lookOutlined-3yKVGo:not(.colorWhite-1H92hK) { color: #c5536c; border-color: #c5536c;}
+
+    /* Hover background */
+    .colorDefault-CDqZdO.focused-3qFvc8, .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) { color: var(--interactive-normal);}
+
+.theme-light {
+
+    /* Text */
+    --text-normal: #a86373;
+    --header-primary: #a86373;
+    --interactive-normal: #a86373;
+    --channels-default: #a86373;
+
+    --text-muted: #a86373;
+    --interactive-muted: #cf92a0;
+
+    --header-secondary: #cf92a0;
+    --interactive-hover: #be7d8c;
+    --interactive-active: #b36f7f;
+
+    /* Background color */
+    --background-primary: #FFFFFF;
+    --background-secondary: #ffeeee;
+    --background-secondary-alt: #fdc7c7;
+    --background-tertiary: #ffbbbb;
+    --background-floating: #ffbbbb;
+    --background-accent: #c5536c;
+    --channeltextarea-background: var(--background-secondary);
+    --background-modifier-hover: rgba(56, 31, 31, 0.062);
+    --background-modifier-active: rgba(19, 12, 12, 0.123);
+    --background-modifier-selected: rgba(31, 21, 21, 0.11);
+
+    /* Scrollbar */
+    --scrollbar-auto-thumb: var(--background-tertiary);
+    --scrollbar-auto-track: var(--background-secondary-alt);
+    --scrollbar-thin-thumb: var(--background-tertiary);
+    --scrollbar-thin-track: transparent;
+
+    /* Other */
+    --deprecated-quickswitcher-input-background: var(--background-primary);
+}
+
+    .colorBrand-3cPPsm { color: #c5536c;}
+    .colorDefault-CDqZdO.focused-3qFvc8, .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) { background-color: var(--background-modifier-hover) !important;}
+
+    /* Buttons */
+    .lookFilled-yCfaCM { background-color: #c5536c !important;}
+    .lookFilled-yCfaCM:active, .lookFilled-yCfaCM:hover { background-color: #b64a61 !important;}
+    .lookOutlined-3yKVGo:not(.colorWhite-1H92hK) { color: #c5536c; border-color: #c5536c;}
+
+    /* Hover background */
+    .colorDefault-CDqZdO.focused-3qFvc8, .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) { color: var(--interactive-normal);}
+	
+	.theme-dark .lookFilled-yCfaCM {
+        background-color: #36393f !important;
+    }
+    .theme-dark .lookFilled-yCfaCM:active, .theme-dark .lookFilled-yCfaCM:hover {
+        background-color: #2b2d31 !important;
+    }
+	
+
