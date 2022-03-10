@@ -1624,16 +1624,6 @@
   background-size: 100%;
   filter: invert(100%);
 }
-:root .layers-OrUESM::before {
-  z-index: 0;
-  bottom: 75px;
-  right: 0;
-  width: 20px;
-  height: 50px;
-  background: url("https://i.pinimg.com/originals/8a/72/10/8a72102ba2232636a1ea76712c01c822.png") no-repeat;
-  background-size: 100%;
-  filter: invert(100%);
-}
 :root .layers-OrUESM::after {
   bottom: 15px;
   right: 100px;
@@ -1914,5 +1904,12 @@
 
   .layers-OrUESM > :nth-child(2) {
     margin-right: 450px;
+  }
+  .sidebar-1tnWFu, .chat-2ZfjoI, .wrapper-1_HaEi {
+	border-radius: 10px !important;
+	margin: 0 10px;
+  }
+  .scrollerInner-2PPAp2 {
+    backdrop-filter: blur(4px);
   }
 }
