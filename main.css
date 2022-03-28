@@ -2079,3 +2079,10 @@ From: https://itsjustjoshdev.github.io/Midnight/src/app/grid.css
 .inner-2pOSmK {
 	display: none !important;
 }
+
+/* button-3bklZh have a little bounce animation when hovering */
+.button-3bklZh:hover {
+  animation: bounce .5s ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
