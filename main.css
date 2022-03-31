@@ -1996,7 +1996,7 @@ From: https://itsjustjoshdev.github.io/Midnight/src/app/grid.css
 	padding-top: 2px; padding-bottom: 5px; justify-content: left; opacity: .8;
 	position: absolute; height: 18px !important; width: 240px !important;
 	bottom: 0; left: 0; margin: 0 !important; padding-left: 10px;
-	background: var(--background-secondary-alt); border-radius: 0;
+	background: var(--background-secondary-alt); border-radius: 5px;
 }
 
 /* User Details */
@@ -2029,7 +2029,7 @@ From: https://itsjustjoshdev.github.io/Midnight/src/app/grid.css
 	width: 250px;
 	top: -16px; left: -16px;
 	z-index: 5;
-	border-top: 3px solid var(--status-color);
+	background-color: var(--status-color);
 	position: absolute;
 }
 
