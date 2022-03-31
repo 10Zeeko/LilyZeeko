@@ -2082,7 +2082,20 @@ From: https://itsjustjoshdev.github.io/Midnight/src/app/grid.css
 
 /* button-3bklZh have a little bounce animation when hovering */
 .button-3bklZh:hover {
-  animation: bounce .5s ease-in-out;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
+  animation: bounce .5s ease-in-out infinite;
 }
+
+/* Make an image than on hover has a bounce animation forever using keyframes */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
