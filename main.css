@@ -1665,6 +1665,7 @@
   background: var(--background-tertiary-alt);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 :root .winButton-3UMjdg {
   background-color: var(--background-primary);
@@ -1807,7 +1808,7 @@
   left: 50px;
   width: 200px;
   height: 200px;
-  background: url("https://i.imgur.com/dCd49s0.gif") center/80% no-repeat;
+  background: url("https://media.giphy.com/media/xgC0dqgNE2b7KvH0W0/giphy.gif") center/80% no-repeat;
 }
 :root #permissions-modal-wrapper #permissions-modal {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11) !important;
@@ -2089,3 +2090,4 @@ From: https://itsjustjoshdev.github.io/Midnight/src/app/grid.css
 	display: none !important;
 }
 
+/* Animations */
