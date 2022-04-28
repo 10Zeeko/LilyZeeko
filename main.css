@@ -1665,7 +1665,7 @@
   background: var(--background-tertiary-alt);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.2);
+  filter: brightness(60%);
 }
 :root .winButton-3UMjdg {
   background-color: var(--background-primary);
