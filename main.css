@@ -1048,28 +1048,67 @@
   background: var(--background-secondary) !important;
 }
 :root .accountProfileCard-lbN7n- {
-  margin-top: 160px;
-  background-color: var(--background-secondary-alt);
-  border-radius: var(--border-radius);
-  overflow: visible;
+  flex-direction: column;
 }
 :root .accountProfileCard-lbN7n- .banner-1YaD3N {
-  position: absolute;
-  top: -160px;
-  height: 150px;
-  border-radius: var(--border-radius);
+  border-radius: 8px 8px 0 0 !important;
+  height: 150px !important;
+  flex: unset !important;
 }
 :root .accountProfileCard-lbN7n- .userInfo-regn9W {
-  height: 100px;
-  align-items: center;
+  height: 150px !important;
+  margin-left: 0 !important;
+  justify-content: space-evenly !important;
 }
-:root .accountProfileCard-lbN7n- .userInfo-regn9W .avatar-3mTjvZ {
-  top: 8px;
-  border-color: transparent;
-  background-color: transparent;
+:root .accountProfileCard-lbN7n- .userInfo-regn9W .container-1gYwHN {
+  justify-content: center;
 }
 :root .accountProfileCard-lbN7n- .background-3d_SjE {
-  border-radius: var(--border-radius);
+  flex: unset !important;
+}
+:root .accountProfileCard-lbN7n- {
+display: flex;
+background-color: var(--background-secondary);
+}
+:root .accountProfileCard-lbN7n- .banner-1YaD3N {
+border-radius: 8px 0 0 8px;
+height: unset;
+flex: 1;
+}
+:root .accountProfileCard-lbN7n- .userInfo-regn9W {
+position: absolute;
+display: grid;
+grid-template-areas: "avatar username" "avatar button";
+gap: 20px;
+overflow: hidden;
+height: 100%;
+padding: 0;
+justify-content: flex-start;
+margin-left: 40px;
+}
+:root .accountProfileCard-lbN7n- .userInfo-regn9W .avatar-3mTjvZ {
+grid-area: avatar;
+position: static;
+width: 120px !important;
+height: 120px !important;
+border: none;
+background: none;
+align-self: center;
+}
+:root .accountProfileCard-lbN7n- .userInfo-regn9W .avatar-3mTjvZ .mask-1FEkla {
+width: 120px;
+height: 120px;
+}
+:root .accountProfileCard-lbN7n- .userInfo-regn9W > div:nth-child(2) {
+grid-area: username;
+align-self: flex-end;
+}
+:root .accountProfileCard-lbN7n- .userInfo-regn9W button:last-child {
+grid-area: button;
+}
+:root .accountProfileCard-lbN7n- .background-3d_SjE {
+margin: 0;
+flex: 1;
 }
 :root .profileCustomizationSection-2OOT4p .baseLayout-8AMrwn {
   flex-direction: column;

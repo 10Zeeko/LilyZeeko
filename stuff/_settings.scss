@@ -80,162 +80,121 @@
 
 // My account
 .accountProfileCard-lbN7n- { 
-    margin-top: 160px;
-    background-color: var(--background-secondary-alt);
-    border-radius: var(--border-radius); overflow: visible;
+    flex-direction: column;
 
+    // Banner
     .banner-1YaD3N {
-        position: absolute; top: -160px;
-        height: 150px;
-        border-radius: var(--border-radius);
+        border-radius: 8px 8px 0 0 !important;
+        height: 150px !important; flex: unset !important;
     }
 
+    // User info
+    .userInfo-regn9W { 
+        height: 150px !important; 
+        margin-left: 0 !important;
+        justify-content: space-evenly !important;
+
+        // Badges
+        .container-1gYwHN { justify-content: center;}
+    }
+
+    .background-3d_SjE { flex: unset !important;}
+}
+
+.accountProfileCard-lbN7n- {
+    display: flex;
+    background-color: var(--background-secondary);
+
+    // Banner
+    .banner-1YaD3N {
+        border-radius: 8px 0 0 8px;
+        height: unset; flex: 1;
+    }
+
+    // User info
     .userInfo-regn9W {
-        height: 100px; align-items: center;
+        position: absolute; display: grid;
+        grid-template-areas: "avatar username" 
+                             "avatar button";
+        gap: 20px; overflow: hidden;
+        height: 100%; padding: 0;
+        justify-content: flex-start;
+        margin-left: 40px;
 
-        .avatar-3mTjvZ { top: 8px; border-color: transparent; background-color: transparent;}
+        // Avatar
+        .avatar-3mTjvZ {
+            grid-area: avatar;
+            position: static;
+            width: 120px !important; height: 120px !important;
+            border: none; background: none;
+            align-self: center;
+
+            .mask-1FEkla { width: 120px; height: 120px;}
+        }
+
+        // Username
+        & > div:nth-child(2) { 
+            grid-area: username;
+            align-self: flex-end;
+        }
+
+        // Edit profile
+        button:last-child { grid-area: button;}
     }
-
-    .background-3d_SjE { border-radius: var(--border-radius);}
+    
+    .background-3d_SjE { margin: 0; flex: 1;}
 }
 
 // User profile
-.profileCustomizationSection-2OOT4p {
-  .baseLayout-8AMrwn { 
-      flex-direction: column;
+.profileCustomizationSection-2OOT4p .baseLayout-8AMrwn { 
+    & > :first-child { flex: 2 auto;}
 
-    & > :first-child { flex: 1 auto;}
-
-    & > .preview-yzOwK1 { margin: 0;}
-
-    .profileBannerPreview-3mLIdO {
-        display: grid;
-        grid-template-areas:
-            "avatar user-infos body"
-            "banner banner body";
-        grid-template-columns: 120px 1fr 1fr;
-        grid-template-rows: 120px 1fr;
-        width: unset !important;
-        padding: 8px;
-        border-radius: var(--border-radius);
-        box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%), 0 0 0 1px rgb(56 31 31 / 11%);
-
-        // Banner
-        & > div:first-child {
-            grid-area: banner;
-            position: static;
-            width: 100%;
-            height: calc(100% - 8px);
-            margin: 8px 0 0;
-            border-radius: var(--border-radius);
-        }
-
-        // Avatar
-        .avatarUploader-qEFQS2 {
-            grid-area: avatar;
-            position: relative;
-            top: 0; left: 0;
-
-            .avatarUploaderInner-p38nm2 { 
-                border: none; background: none;
-                border-radius: var(--border-radius);
-                width: 100% !important; height: 100% !important;
-                background-repeat: no-repeat; background-size: cover;
-            }
-
-            .avatarUploaderIcon-3-5PWB { display: none;}
-        }
-
-        // User informations header
-        .headerTop-3GPUSF {
-            grid-area: user-infos;
-            position: static; display: flex;
-            flex-direction: column-reverse;
-            align-items: center; justify-content: flex-end;
-            padding: 0; margin-left: 8px;
-            background-color: var(--background-secondary-alt);
-            border-radius: var(--border-radius);
+    // Banner
+    .banner-3D8GgT {
+        position: absolute;
+        height: 180px;
+        -webkit-mask-image: linear-gradient(#000000c2, #000000c2);
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), 50% 100%, 0 calc(100% - 25px));
+    }
     
-            // Badges
-            .profileBadges-2pItdR {
-                position: static;
-                width: 100%; height: 100%; 
-                max-width: unset;
-                align-items: center; justify-content: center;
-                padding: 10px; margin: 0;
+    // Avatar
+    .avatarUploader-qEFQS2 {
+        top: 15px; left: 50%; margin-left: -40px;
+
+        .avatarUploaderInner-p38nm2 { 
+            border: none;
+            border-radius: var(--avatar-radius);
     
-                .profileBadge22-3GAYRy { width: 30px; height: 30px;}
-            }
-    
-            // Username
-            .headerText-1-WmDq {
-                display: flex; flex-direction: column;
-                width: 100%; height: 100%;
-                align-items: center; justify-content: center;
-                padding: 6px;
-                background-color: var(--background-primary);
-    
-                .headerTag-3GXZkV, .nickname-t08Mck { font-size: 16px;}
-            }
-    
-            .setIdentityLink-hOFsMl { display: none;}
-        }
-    
-        .popoutInfo-16MuYF {
-            grid-area: body; padding: 0 0 0 8px !important;
-
-            // Custom status
-            .customStatus-3XAoF9 {
-                position: relative; overflow: hidden;
-                margin-bottom: 8px; padding: 36px 8px 8px 8px;
-                background-color: var(--background-secondary-alt);
-                border-radius: var(--border-radius);
-
-                &::before {
-                    content: "CUSTOM STATUS"; position: absolute;
-                    top: 0; left: 0;
-                    width: calc(100% - 10px);
-                    font-size: 12px; text-align: center; 
-                    color: var(--header-secondary); font-weight: bold;
-                    background-color: var(--background-primary);
-                    padding: 5px;
-                }
-            }
-
-            // Divider
-            .divider-1wtgZ3 { display: none;}
-
-            // About Me
-            .aboutMeSection-PUghFQ {
-                margin-bottom: 8px; padding: 0 0 8px 0;
-                background-color: var(--background-secondary-alt);
-                border-radius: var(--border-radius);
-
-                .aboutMeTitle-3pjiS7 {
-                    justify-content: center;
-                    background-color: var(--background-primary);
-                    padding: 5px; border-radius: var(--border-radius) var(--border-radius) 0 0;
-                }
-
-                .aboutMeBody-1J8rhz { padding: 0 12px;}
-            }
-
-            // Activity
-            & > :last-child { 
-                background-color: var(--background-secondary-alt);
-                padding-bottom: 8px; border-radius: var(--border-radius);
-
-                .fakeActivityTitle-3-_pB_ {
-                    text-align: center;
-                    background-color: var(--background-primary);
-                    padding: 5px; border-radius: var(--border-radius) var(--border-radius) 0 0;
-
-                    & ~ * { padding: 0 8px;}
-                }
-            }
+            .imageUploaderIcon-2OHmFu { display: none;}
         }
     }
-  }
+
+    // User infos
+    .headerTop-3GPUSF {
+        display: flex; flex-direction: column-reverse;
+        text-align: center; padding-top: 110px;
+        padding-bottom: 20px; 
+
+        .headerTagWithNickname-1U8zZH, .setIdentityLink-hOFsMl { display: none;}
+        .headerTagDiscriminatorNoNickname-dfcvHa { color: #dadada;}
+
+        // Badges
+        .profileBadges-2pItdR {
+            position: static;
+            justify-content: center;
+            max-width: unset;
+
+            & > * { margin: 0 3px;}
+            &:empty { margin-bottom: 20px;}
+        }
+
+        .headerText-1-WmDq { margin-bottom: 8px;}
+    }
+
+    // Status + About Me
+    .customStatus-3XAoF9, .aboutMeSection-PUghFQ { padding-top: 12px;}
+
+    .divider-1wtgZ3 { display: none;}
 }
 
 // Privacy & Safety
